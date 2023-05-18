@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullstack Booking Appointment App</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body onload="getUsers()">
+    <script src="./client.js"></script>
+    <div>
+        <form class="form">
+            <labelfor="username">Name: </label>
+            <input id="username" type="text" name="username">
+            <br><br>
+            <label for="email">email: </label>
+            <input id="email" type="email" name="email">
+            <br><br>
+            <label for="phonenumber">Phone: </label>
+            <input id="phonenumber" type="number" name="phonenumber"  >
+            <br><br>
+            <input id ="submitBtn" type="submit" value="submit" onclick="saveUser()">
+        </form>
+        <hr>
+
+    </div>
+    <div class="user-list">
+         <ul id="userListId">
+            
+         </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</body>
+</html>
